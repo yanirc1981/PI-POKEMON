@@ -1,0 +1,14 @@
+body {
+  background-image:url('https://th.bing.com/th/id/OIP.F8n56hgkGM9TuLuCXs1IEwHaE8?pid=ImgDet&w=474&h=316&rs=1'); 
+  margin: 20;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
