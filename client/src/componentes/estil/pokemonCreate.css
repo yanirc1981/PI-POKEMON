@@ -1,0 +1,11 @@
+.caja{
+    background-color: rgb(196, 200, 146);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3cm;
+    width: 15cm;
+   
+
+}
