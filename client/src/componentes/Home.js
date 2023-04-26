@@ -12,7 +12,7 @@ import {
 import Card from "./Card";
 import Paginado from "./Paginado";
 import NavBar from "./NavBar";
-import SearchBar from "../componentes/SearchBar";
+
 import "./estil/home.css";
 
 function Home() {
@@ -54,10 +54,12 @@ function Home() {
 
   return (
     <>
-      <NavBar />
-      <SearchBar />
+   
+      
       <div>
+     
         <div className="filtros">
+        <NavBar />
           <div>
             <h4>A-Z</h4>
           <select className="select" name="select" onChange={onSelectsChange} >

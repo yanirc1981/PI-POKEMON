@@ -1,11 +1,64 @@
-.caja{
-    background-color: rgb(196, 200, 146);
-    display:flex;
+.caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  form {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3cm;
-    width: 15cm;
-   
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="file"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+    display: flex 1;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  span {
+    color: #3e8e41;
+    margin-left: 5px;
+  }
 
-}
+  h3 {
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: expanded;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:rgba(239, 236, 161, 0.87);
+  }
+  

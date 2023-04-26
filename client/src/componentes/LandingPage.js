@@ -10,10 +10,10 @@ export default function LandingPage() {
           className="img"
           src="https://th.bing.com/th/id/R.82a5525da38ec9fd432d675263207374?rik=skqc9Xozg8J%2fqQ&pid=ImgRaw&r=0" />
           <div>
-         <Link to="/home">
-          <button className="button"> INGRESAR </button>
+         <Link to="/home" >
+          <button className="button" > INGRESAR </button>
         </Link>
-      </div>
+        </div>
          <br></br>
           <img
           className="image"

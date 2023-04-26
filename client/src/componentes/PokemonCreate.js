@@ -96,9 +96,20 @@ const Form = () => {
     setErrors(validate(pokemon));
   }, [pokemon]);
 
-  const handleSubmit = (e) => {
-    console.log("pokemon", pokemon);
+  const handlerSubmit = (e) => {
     e.preventDefault();
+    alert("Pokemon creado con éxito");
+    setPokemon({
+      name: "",
+      life: "",
+      attack: "",
+      defense: "",
+      speed: "",
+      height: "",
+      weight: "",
+      image: "",
+      type: [],
+    });
 
     dispatch(postPokemon(pokemon));
   };
@@ -122,90 +133,81 @@ const Form = () => {
   }
   return (
     <div className="caja">
-      <h3>Crear Pókemon</h3>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(e) => handlerSubmit(e)} className="form">
+        <input
+          type="text"
+          name="name"
+          value={pokemon.name.toLowerCase()}
+          onChange={handleChange}
+          placeholder="Nombre"
+        ></input>
+        {errors.name && <span>{errors.name}</span>}
+
+        <input
+          type="number"
+          name="life"
+          value={pokemon.life}
+          onChange={handleChange}
+          placeholder="Vida"
+        ></input>
+        {errors.name && <span>{errors.life}</span>}
+
+        <input
+          type="number"
+          name="attack"
+          value={pokemon.attack}
+          onChange={handleChange}
+          placeholder="Fuerza"
+        ></input>
+        {errors.name && <span>{errors.attack}</span>}
+
+        <input
+          type="number"
+          name="defense"
+          value={pokemon.defense}
+          onChange={handleChange}
+          placeholder="Defensa"
+        ></input>
+        {errors.name && <span>{errors.defense}</span>}
+
+        <input
+          type="number"
+          name="speed"
+          value={pokemon.speed}
+          onChange={handleChange}
+          placeholder="Velocidad"
+        ></input>
+        {errors.name && <span>{errors.speed}</span>}
+
+        <input
+          type="number"
+          name="height"
+          value={pokemon.height}
+          onChange={handleChange}
+          placeholder="Altura"
+        ></input>
+        {errors.name && <span>{errors.height}</span>}
+
+        <input
+          type="number"
+          name="wheight"
+          value={pokemon.wheight}
+          onChange={handleChange}
+          placeholder="Peso"
+        ></input>
+        {errors.name && <span>{errors.wheight}</span>}
+
+        <input
+          type="file"
+          name="image"
+          value={pokemon.image}
+          onChange={handleChange}
+          placeholder="Imagen"
+        ></input>
+        {errors.name && <span>{errors.image}</span>}
+
         <div>
-          <label>Nombre:</label>
-          <input
-            type="text"
-            name="name"
-            value={pokemon.name.toLowerCase()}
-            onChange={handleChange}
-          ></input>
-          {errors.name && <span>{errors.name}</span>}
-        </div>
-        <div>
-          <label>Vida:</label>
-          <input
-            type="number"
-            name="life"
-            value={pokemon.life}
-            onChange={handleChange}
-          ></input>
-          {errors.name && <span>{errors.life}</span>}
-        </div>
-        <div>
-          <label>Fuerza:</label>
-          <input
-            type="number"
-            name="attack"
-            value={pokemon.attack}
-            onChange={handleChange}
-          ></input>
-          {errors.name && <span>{errors.attack}</span>}
-        </div>
-        <div>
-          <label>Defensa:</label>
-          <input
-            type="number"
-            name="defense"
-            value={pokemon.defense}
-            onChange={handleChange}
-          ></input>
-          {errors.name && <span>{errors.defense}</span>}
-        </div>
-        <div>
-          <label>Velocidad:</label>
-          <input
-            type="number"
-            name="speed"
-            value={pokemon.speed}
-            onChange={handleChange}
-          ></input>
-          {errors.name && <span>{errors.speed}</span>}
-        </div>
-        <div>
-          <label>Altura:</label>
-          <input
-            type="number"
-            name="height"
-            value={pokemon.height}
-            onChange={handleChange}
-          ></input>
-          {errors.name && <span>{errors.height}</span>}
-        </div>
-        <div>
-          <label>Peso:</label>
-          <input
-            type="number"
-            name="wheight"
-            value={pokemon.wheight}
-            onChange={handleChange}
-          ></input>
-          {errors.name && <span>{errors.wheight}</span>}
-        </div>
-        <div>
-          <label>Imagen:</label>
-          <input
-            type="text"
-            name="image"
-            value={pokemon.image}
-            onChange={handleChange}
-          ></input>
-          {errors.name && <span>{errors.image}</span>}
-        </div>
-        <div className="types-s">
-          <select onChange={handleSelect}>
+          <select className="select" onChange={handleSelect}>
             {types.map((e) => (
               <option value={e.name} key={e.id}>
                 {e.name}
@@ -213,8 +215,9 @@ const Form = () => {
             ))}
           </select>
 
-          <p>Types:</p>
+         
           <div>
+          <p>Types:</p>
             {pokemon.type.map((e) => (
               <div>
                 <span>{e}</span>
@@ -223,6 +226,7 @@ const Form = () => {
                   onClick={() => deleteHandler(e)}
                   value={e}
                   key={e}
+                  className="button"
                 >
                   X
                 </button>
@@ -232,11 +236,11 @@ const Form = () => {
         </div>
         <div>
           <Link to="/home">
-            <button>Back</button>
+            <button className="button">Back</button>
           </Link>
         </div>
         <div>
-          <input type="submit"></input>
+          <input className="button" type="submit"></input>
         </div>
       </form>
     </div>

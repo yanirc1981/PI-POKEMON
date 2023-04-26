@@ -1,45 +1,45 @@
 .cards{
-    display:inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-decoration: none;
+  display:inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-decoration: none;
 }
 
 
 
 .card {
-    background: rgba(239, 236, 161, 0.87);
-    color: #000000;
-    margin: 1cm; 
-  width: 7cm;
-  border-radius: 10px;
-  display: flex;
-  border-color: #000000da;
-  border-width: 3px;
-  border-style: solid;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-   }
-   .card:hover {
-    box-shadow: 20px 20px 20px rgb(0, 0, 0, 0, 4);
-    transform: translateY(-3%);
-  }
-  .name {
-    font-family: "Sofia", cursive;
-    font-size: 20px;
-    color: #000000;
-    text-decoration: none;
-  }
-  
-  .type {
-    list-style-type: none;
-    color: #2e023b;
-    text-decoration-line: none;
-    display: inline;
-    padding-left: 3px;
-    padding-right: 3px;
-    font-family: "Merienda", cursive;
-    text-decoration: none;
-  } 
+  background: rgba(239, 236, 161, 0.87);
+  color: #000000;
+  margin: 1cm; 
+width: 7cm;
+border-radius: 10px;
+display: flex;
+border-color: #000000da;
+border-width: 3px;
+border-style: solid;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+ }
+ .card:hover {
+  box-shadow: 20px 20px 20px rgb(0, 0, 0, 0, 4);
+  transform: translateY(-3%);
+}
+.name {
+  font-family: "Sofia", cursive;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.type {
+  list-style-type: none;
+  color: #2e023b;
+  text-decoration-line: none;
+  display: inline;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-family: "Merienda", cursive;
+  text-decoration: none;
+} 
   

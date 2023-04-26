@@ -18,7 +18,7 @@ export default function SearchBar() {
   };
 
   return (
-    <div >
+    <>
       <input
         className="search"
         type="text"
@@ -28,6 +28,6 @@ export default function SearchBar() {
       <button className="boton" type="submit" onClick={(e) => handleSubmit(e)}>
         Buscar
       </button>
-    </div>
+      </>
   );
 }
