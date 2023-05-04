@@ -4,7 +4,8 @@ import LandingPage from "./componentes/LandingPage"; //agregado
 import Home from "./componentes/Home";
 import PokemonCreate from "./componentes/PokemonCreate";
 import Details from "./componentes/details";
-
+import axios from "axios";
+axios.defaults.baseURL="http://localhost:3001/"
 
 function App() {
   return (
