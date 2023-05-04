@@ -5,7 +5,7 @@ import Home from "./componentes/Home";
 import PokemonCreate from "./componentes/PokemonCreate";
 import Details from "./componentes/details";
 import axios from "axios";
-axios.defaults.baseURL="http://localhost:3001/"
+axios.defaults.baseURL="https://pi-pokemon-production-40c9.up.railway.app/"
 
 function App() {
   return (
